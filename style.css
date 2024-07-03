@@ -5,6 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 :root {
   --main-color: #3758f9;
@@ -36,6 +37,7 @@ body {
 .nav-right ul li:hover {
   color: var(--main-color);
   cursor: pointer;
+  font-weight: 400;
 }
 
 .nav-left {
@@ -44,7 +46,12 @@ body {
   width: 44px;
   height: 44px;
 }
-.Name {
+.name {
   font-size: 24px;
   font-weight: 600;
+  color:#333333
+}
+
+#introduce{
+    background-color: #DBECFF;
 }
