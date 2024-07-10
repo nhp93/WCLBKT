@@ -123,38 +123,59 @@ body {
   opacity: 0px;
   position: relative;
 }
-#slideshow {
+
+#animation-example{
+  width: 1120px;
+  height: 450px;
+  margin: auto;
+  padding-bottom: 200px;
+  position: relative;
   overflow: hidden;
-  height: 510px;
-  width: 728px;
-  margin: 0 auto;
 }
 
-.slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 14s ease infinite;
+#animation-example .card{
+  padding: 300px;
+  height: 200px;
+  background-image: url(./images/intro-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 200px;
+
 }
 
-.slide {
-  float: left;
-  height: 510px;
-  width: 728px;
+.card-content{
+  position: absolute;
+  border-radius:8px;
+  padding:16px;
+  background-color: #000000A6;
+  color: white;
+  bottom: -200px;
+  right: 50%;
+  transform: translateX(50%);
+  transition: bottom 2s ease-in-out;
+  animation: example-down 1s ease-in-out forwards;
 }
 
-@-webkit-keyframes slide {
-  20% {
-    margin-left: 0px;
+@keyframes example {
+  from {
+    bottom: -200px;
   }
-  30% {
-    margin-left: -728px;
+  to { 
+    bottom: 100px;
   }
-  50% {
-    margin-left: -728px;
+}
+
+@keyframes example-down {
+  from {
+    bottom: 100px;
   }
-  60% {
-    margin-left: -1456px;
+  to { 
+    bottom: -200px;
   }
-  80% {
-    margin-left: -1456px;
-  }
+}
+
+#animation-example .card:hover .card-content{
+  animation: example 1s ease-in-out forwards;
+  cursor: pointer;
 }
