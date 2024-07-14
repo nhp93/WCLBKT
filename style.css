@@ -187,6 +187,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   padding-bottom: 200px;
+  position: relative;
 }
 .card-content {
   position: absolute;
@@ -194,27 +195,27 @@ body {
   padding: 16px;
   background-color: #000000a6;
   color: white;
-  bottom: -800px;
+  bottom: -50%;
   right: 50%;
   transform: translateX(50%);
   transition: bottom 2s ease-in-out;
-  animation: example-down 1s ease-in-out forwards;
+  animation: example-down 1s ease-in-out forwards; */
 }
 @keyframes example {
   from {
-    bottom: -1450px;
+    bottom: -50%px;
   }
   to {
-    bottom: -1250px;
+    bottom: 50px;
   }
 }
 
 @keyframes example-down {
   from {
-    bottom: -1250px;
+    bottom: 50px;
   }
   to {
-    bottom: -1450px;
+    bottom: -50%;
   }
 }
 
