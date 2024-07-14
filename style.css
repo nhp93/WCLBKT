@@ -123,17 +123,61 @@ body {
   opacity: 0px;
   position: relative;
 }
-
-#animation-example{
-  width: 1120px;
-  height: 450px;
+#content {
+  width: 992px;
+  height: auto;
+  margin: 40px auto;
+}
+.muc-tieu h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 180px;
+  padding: 12px 0;
+}
+.muc-tieu hr {
+  width: 4vw;
+  border: 2.5px solid blue;
   margin: auto;
-  padding-bottom: 200px;
-  position: relative;
-  overflow: hidden;
+}
+.muc-tieu p {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 36px;
+}
+.hoat-dong {
+  width: 1120px;
+  height: auto;
+  margin: 40px auto;
 }
 
-#animation-example .card{
+.hoat-dong h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 86px;
+  padding: 12px 0;
+}
+.hoat-dong hr {
+  width: 4vw;
+  border: 2.5px solid blue;
+  margin: auto;
+}
+.hoat-dong-imaage {
+  flex-wrap: wrap;
+}
+.hoat-dong-image img {
+  height: 235px;
+  width: 352px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 0 8px;
+}
+.card {
   padding: 300px;
   height: 200px;
   background-image: url(./images/intro-img.png);
@@ -141,41 +185,38 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   padding-bottom: 200px;
-
 }
-
-.card-content{
+.card-content {
   position: absolute;
-  border-radius:8px;
-  padding:16px;
-  background-color: #000000A6;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #000000a6;
   color: white;
-  bottom: -200px;
+  bottom: -800px;
   right: 50%;
   transform: translateX(50%);
   transition: bottom 2s ease-in-out;
   animation: example-down 1s ease-in-out forwards;
 }
-
 @keyframes example {
   from {
-    bottom: -200px;
+    bottom: -1450px;
   }
-  to { 
-    bottom: 100px;
+  to {
+    bottom: -1250px;
   }
 }
 
 @keyframes example-down {
   from {
-    bottom: 100px;
+    bottom: -1250px;
   }
-  to { 
-    bottom: -200px;
+  to {
+    bottom: -1450px;
   }
 }
 
-#animation-example .card:hover .card-content{
+.card:hover .card-content {
   animation: example 1s ease-in-out forwards;
   cursor: pointer;
 }
