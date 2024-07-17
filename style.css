@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
 html {
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
@@ -278,6 +284,8 @@ html {
 
 #contact {
   width: 100vw;
+  background-color: #F3F4F6;
+  height: 100vh;
 }
 
 .top-img {
@@ -392,5 +400,64 @@ html {
   width: 496px;
   height: 362px;
   gap: 32px;
-  padding-left: 128px;
+}
+
+input[type="text"]{
+  outline: none;
+  border: none;
+  padding: 11px 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+input[type="text"]::placeholder, textarea::placeholder{
+  font-family: "Inter", sans-serif;
+}
+
+.wrap-form-item{
+  display: flex;
+  margin-top: 32px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-form-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+textarea{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 11px 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  resize: none;
+  font-family: "Inter", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 11px 20px;
+  background-color: #3758f9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
