@@ -10,9 +10,6 @@ html {
 :root {
   --main-color: #3758f9;
 }
-body {
-  /* background-color: #3758f9; */
-}
 .nav-bar {
   background-color: white;
   padding: 12px 160px;
@@ -199,7 +196,7 @@ body {
   right: 50%;
   transform: translateX(50%);
   transition: bottom 2s ease-in-out;
-  animation: example-down 1s ease-in-out forwards; */
+  animation: example-down 1s ease-in-out forwards;
 }
 @keyframes example {
   from {
@@ -222,4 +219,178 @@ body {
 .card:hover .card-content {
   animation: example 1s ease-in-out forwards;
   cursor: pointer;
+}
+/* #contact {
+  width: 100vw;
+}
+.top-img {
+  position: relative;
+}
+.top-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 332px;
+  background-color: rgba(73, 73, 73, 0.5);
+  z-index: 1;
+}
+
+.top-img img {
+  width: 100vw;
+  height: 332px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+.top-img h1 {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  padding: 12px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 175%);
+}
+.top-img hr {
+  width: 3.5vw;
+  border: 2.5px solid #97a8fc;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+.container-lien-he {
+  width: 1120px;
+  height: 362px;
+  margin: 40px auto;
+  padding-top: 40px;
+}
+.contact-left,
+.contact-right {
+  position: relative;
+  margin-top: 0; /* Adjust this value as needed 
+} */
+
+#contact {
+  width: 100vw;
+}
+
+.top-img {
+  position: relative;
+}
+
+.top-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 432px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.top-img img {
+  width: 100%;
+  height: 432px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.top-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  padding: 12px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.top-img hr {
+  width: 3.5vw;
+  border: 2.5px solid #97a8fc;
+  margin: auto;
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.container-lien-he {
+  width: 1120px;
+  height: auto;
+  margin: 40px auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact-left,
+.contact-right {
+  /* flex: 1; */
+}
+.contact-left {
+  width: 496px;
+  height: 268px;
+  gap: 32px;
+  opacity: 0px;
+}
+.contact-left h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  padding-bottom: 32px;
+}
+.contact-left p:first-of-type {
+  size: 18px;
+  line-height: 26px;
+  font-weight: normal !important;
+  padding-bottom: 32px;
+}
+.contact-left p:last-of-type {
+  size: 18px;
+  line-height: 26px;
+  font-weight: normal !important;
+}
+.lien-he {
+  width: 496px;
+  height: 26px;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 32px;
+}
+.lien-he .email {
+  font-size: 18px;
+  line-height: 26px;
+  color: #3758f9;
+  width: 232px;
+  height: 100%;
+}
+.lien-he .phone-number {
+  font-size: 18px;
+  line-height: 26px;
+  width: 232px;
+  height: 100%;
+}
+
+.contact-right {
+  width: 496px;
+  height: 362px;
+  gap: 32px;
+  padding-left: 128px;
 }
